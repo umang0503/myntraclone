@@ -18,11 +18,11 @@ return
             accountEmail: Text("umang0503@gmail.com"),
             currentAccountPicture: GestureDetector(
               child: CircleAvatar(
-                backgroundColor: Colors.grey,
+                backgroundColor: Colors.white30,
                 child: Icon(Icons.person, color: Colors.white,),
               ),),
             decoration: BoxDecoration(
-                color: Colors.purple
+                color: Colors.purple[800]
             ),
 
           ),
@@ -55,6 +55,7 @@ return
                 style: TextStyle(
                     fontWeight: FontWeight.bold
                 )),
+
             onTap: () {},
           ),
 
@@ -65,6 +66,31 @@ return
                 )),
             onTap: () {},
           ),
+
+          ListTile(
+            title: Text('Gadgets',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold
+                )),
+            onTap: () {},
+          ),ListTile(
+            title: Text('Plus Size',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold
+                )),
+            onTap: () {},
+
+          ),
+          Divider(),
+
+          ListTile(
+            title: Text('Mynta Insider    ENROLL NOW',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold
+                )),
+            onTap: () {},
+          ),
+
           ListTile(
             title: Text('Home & Living',
                 style: TextStyle(
@@ -72,7 +98,6 @@ return
                 )),
             onTap: () {},
           ),
-
 
         ],
       ),

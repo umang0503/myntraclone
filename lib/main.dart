@@ -1,6 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import './grid.dart';
+
 import './drawer.dart';
+import './body.dart';
+import './carousel.dart';
+
 
     void main() =>runApp(MyApp());
 
@@ -8,15 +13,13 @@ import './drawer.dart';
     Widget build(BuildContext context) {
       return MaterialApp(
         home:
-        Scaffold(
+       SafeArea( child:Scaffold(
 
           appBar: AppBar(
-
+            elevation:0.0,
             backgroundColor: Colors.white,
 
-            title: Text("Myntra",
-          style:TextStyle(color:Colors.pink)
-            ),
+            title:  Image.asset( 'assets/images/bar.jpg',width:250,),
               actions: <Widget>[IconButton(
           icon: Icon(Icons.search),
           color: Colors.black,
@@ -48,9 +51,49 @@ import './drawer.dart';
 
           ),
           drawer:DraWer(),
+          body:ListView(scrollDirection: Axis.vertical,
+              children: <Widget>[
+            FirstList(),
+          SizedBox(width:double.infinity,
+          height:6.0),
+          Container(
+              width: double.infinity,
+              child:
+
+          Image.asset(
+              'assets/images/m8.jpg',
+          width:100
+          )),SizedBox(width:double.infinity,
+              height:6.0),
+           Container(
+               width:double.infinity,
+               child:
+              Image.asset(
+                  'assets/images/m3.jpg',
+                  width:100
+
+              )),SizedBox(width:double.infinity,
+                    height:6.0),Container(
+                    width:50,
+                    child:
+                    Image.asset(
+                        'assets/images/myntra2.jpg',
+                        width:10
+
+                    )),SizedBox(width:double.infinity,
+      height:6.0),Container(
+      width:50,
+      child:
+      Image.asset(
+      'assets/images/m1.jpg',
+      width:10)),SizedBox(width:double.infinity,
+           height:8.0),Image.asset(
+
+           'assets/images/m7.jpg'),SizedBox(width:double.infinity,
+           height:9.0),CarouSel()]
 
 
-        ));
+        ))));
 
     }}
 
