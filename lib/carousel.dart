@@ -10,17 +10,17 @@ class CarouSel extends StatelessWidget {
         height: 400.0,
         width: 600.0,
         child: Carousel(
-          images: [
+          images:[
 
              Image.asset(
           'assets/images/m4.jpg',
-          ), Image.asset(
+          ),Image.asset(
               'assets/images/m5.jpg'),
              Image.asset(
                 'assets/images/m6.jpg')
 
 
-    ],
+    ],  showIndicator: false,
         dotSize: 4.0,
         indicatorBgPadding: 0.0,));
   }

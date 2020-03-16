@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class DraWer extends StatelessWidget {
   @override
   // ignore: missing_return
@@ -22,7 +23,7 @@ return
                 child: Icon(Icons.person, color: Colors.white,),
               ),),
             decoration: BoxDecoration(
-                color: Colors.purple[800]
+                color: Colors.black87
             ),
 
           ),
@@ -33,6 +34,7 @@ return
                     fontWeight: FontWeight.bold
                 )
             ),
+
             onTap: () {},
           ),
           ListTile(
@@ -92,10 +94,18 @@ return
           ),
 
           ListTile(
-            title: Text('Home & Living',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold
-                )),
+            title: Text('Myntra Fashion Superstar',
+               ),
+            onTap: () {},
+          ),
+          ListTile(
+            title: Text('Scan for Coupon',
+               ),
+            onTap: () {},
+          ),
+          ListTile(
+            title: Text('Theme Stores',
+              ),
             onTap: () {},
           ),
 
