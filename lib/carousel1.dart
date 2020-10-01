@@ -7,7 +7,7 @@ class CarouSel1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return
       Container(
-        height: 530.0,
+        height: 550.0,
         width: double.infinity,
           child: Carousel(
             images:[
