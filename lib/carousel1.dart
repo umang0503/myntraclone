@@ -26,7 +26,7 @@ class CarouSel1 extends StatelessWidget {
             ],
             showIndicator: false,
             dotSize: 4.0,
-            indicatorBgPadding: 0.0,)
+           
       ); }
 
 }
